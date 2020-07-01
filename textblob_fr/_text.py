@@ -348,7 +348,7 @@ def _read(path, encoding="utf-8", comment=";;;"):
             if comment and line.startswith(comment):
                 continue
             yield line
-    raise StopIteration
+    return
 
 class Lexicon(lazydict):
 
