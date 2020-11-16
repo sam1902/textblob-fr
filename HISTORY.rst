@@ -1,6 +1,13 @@
 Changelog
 ---------
 
+0.2.1 (11/16/2020)
+++++++++++++++++++
+
+* Applying many old PR that were bunching up
+* Fixed the tests to work with TextBlob>=0.15.3
+  ``import text.blob`` got renamed to ``import text_blob``
+
 0.2.0 (10/27/2013)
 ++++++++++++++++++
 
