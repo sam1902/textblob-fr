@@ -10,6 +10,7 @@ from itertools import chain
 import types
 import os
 import re
+import codecs
 from xml.etree import cElementTree
 
 from .compat import text_type, string_types, basestring, imap, unicode
@@ -334,7 +335,7 @@ def _read(path, encoding="utf-8", comment=";;;"):
     if path:
         if type(path) in string_types and os.path.exists(path):
             # From file path.
-            f = open(path)
+            f = codecs.open(path, "r", encoding="utf-8")
         elif type(path) in string_types:
             # From string.
             f = path.splitlines()
